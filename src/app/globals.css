@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply transition-colors duration-500;
+}
+
+@layer base {
+  body {
+    @apply dark:bg-[#0a0a0a] bg-[#edf6f9];
+    @apply dark:text-[#edf6f9] text-[#0a0a0a];
+  }
+
+  nav {
+    @apply flex justify-between items-center p-4 shadow-sm;
+    @apply dark:shadow-white shadow-black;
+  }
+
+  footer {
+    @apply border-t-2 dark:border-white border-black rounded-2xl;
+  }
+}
